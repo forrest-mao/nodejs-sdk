@@ -1,8 +1,14 @@
 language: node_js
 node_js:
-  - 0.10
+- '4'
+- '6'
+- '8'
 before_script:
-  - export QINIU_ACCESS_KEY=QWYn5TFQsLLU1pL5MFEmX3s5DmHdUThav9WyOWOm
-  - export QINIU_SECRET_KEY=Bxckh6FA-Fbs9Yt3i3cbKVK22UPBmAOHJcL95pGz
-  - export QINIU_TEST_BUCKET="nodesdk"
-  - export QINIU_TEST_DOMAIN="nodesdk.qiniudn.com"
+- export is_travis=true
+deploy:
+  provider: npm
+  email: sdk@qiniu.com
+  api_key:
+    secure: GbKSsROWx6J33WK23cT08eizlkRqpbnCEv3bh4I9R8K5HuUzk08TkNj/LxxuWOEG3hrthivnb5gxshE5UxJ8+nGkS1N2lgZX1i8qT6dGrHb3xda7QB1Szm5+305fCpIa/0jsFqud/8l0GNsNyLezeoaihaNAb9Et5tz6JYVfQxU=
+  on:
+    tags: true

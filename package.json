@@ -1,6 +1,6 @@
 {
   "name": "qiniu",
-  "version": "6.1.5",
+  "version": "7.0.4",
   "description": "Node wrapper for Qiniu Resource (Cloud) Storage API",
   "main": "index.js",
   "directories": {
@@ -32,7 +32,7 @@
     "qiniu",
     "web-service"
   ],
-  "author": "qiniutek.com",
+  "author": "sdk@qiniu.com",
   "contributors": [
     {
       "name": "Xu Shiwei",
@@ -55,16 +55,20 @@
     "node >= 0.4.7"
   ],
   "dependencies": {
-    "mime": "1.2.9",
-    "formstream": "0.0.7",
+    "mime": "1.3.6",
+    "formstream": "1.1.0",
     "crc32": "0.2.2",
-    "urllib": "0.5.1"
+    "urllib": "2.22.0",
+    "agentkeepalive": "3.3.0",
+    "tunnel-agent": "0.6.0",
+    "urlencode": "1.1.0"
   },
   "devDependencies": {
-    "should": "1.2.2",
-    "pedding": "*",
-    "mocha": "*",
+    "@types/node": "^8.0.3",
     "blanket": "*",
+    "mocha": "*",
+    "pedding": "*",
+    "should": "1.2.2",
     "travis-cov": "*"
   },
   "license": "MIT"
